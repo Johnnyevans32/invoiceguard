@@ -1,0 +1,392 @@
+{
+  "sizes": {
+    "train": 800,
+    "val": 200,
+    "test": 200
+  },
+  "parse_rate": 0.987,
+  "rule_only": {
+    "val": {
+      "macro_f1": 0.304,
+      "per_class": {
+        "clean": {
+          "precision": 0.353,
+          "recall": 0.84,
+          "f1-score": 0.497,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.58,
+          "recall": 0.94,
+          "f1-score": 0.718,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          42,
+          0,
+          8,
+          0
+        ],
+        [
+          38,
+          0,
+          12,
+          0
+        ],
+        [
+          3,
+          0,
+          47,
+          0
+        ],
+        [
+          36,
+          0,
+          14,
+          0
+        ]
+      ]
+    },
+    "test": {
+      "macro_f1": 0.354,
+      "per_class": {
+        "clean": {
+          "precision": 0.331,
+          "recall": 0.94,
+          "f1-score": 0.49,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.862,
+          "recall": 1.0,
+          "f1-score": 0.926,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          47,
+          0,
+          3,
+          0
+        ],
+        [
+          47,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          48,
+          0,
+          2,
+          0
+        ]
+      ]
+    }
+  },
+  "tfidf_only": {
+    "C": 30,
+    "val": {
+      "macro_f1": 0.216,
+      "per_class": {
+        "clean": {
+          "precision": 0.275,
+          "recall": 0.22,
+          "f1-score": 0.244,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.211,
+          "recall": 0.24,
+          "f1-score": 0.224,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.184,
+          "recall": 0.18,
+          "f1-score": 0.182,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.204,
+          "recall": 0.22,
+          "f1-score": 0.212,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          11,
+          16,
+          7,
+          16
+        ],
+        [
+          9,
+          12,
+          15,
+          14
+        ],
+        [
+          11,
+          17,
+          9,
+          13
+        ],
+        [
+          9,
+          12,
+          18,
+          11
+        ]
+      ]
+    },
+    "test": {
+      "macro_f1": 0.185,
+      "per_class": {
+        "clean": {
+          "precision": 0.156,
+          "recall": 0.14,
+          "f1-score": 0.147,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.185,
+          "recall": 0.2,
+          "f1-score": 0.192,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.227,
+          "recall": 0.2,
+          "f1-score": 0.213,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.175,
+          "recall": 0.2,
+          "f1-score": 0.187,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          7,
+          15,
+          12,
+          16
+        ],
+        [
+          12,
+          10,
+          12,
+          16
+        ],
+        [
+          13,
+          12,
+          10,
+          15
+        ],
+        [
+          13,
+          17,
+          10,
+          10
+        ]
+      ]
+    }
+  },
+  "baseline_tfidf_plus_rule": {
+    "C": 10,
+    "val": {
+      "macro_f1": 0.46,
+      "per_class": {
+        "clean": {
+          "precision": 0.333,
+          "recall": 0.3,
+          "f1-score": 0.316,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.327,
+          "recall": 0.34,
+          "f1-score": 0.333,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.887,
+          "recall": 0.94,
+          "f1-score": 0.913,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.28,
+          "recall": 0.28,
+          "f1-score": 0.28,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          15,
+          14,
+          1,
+          20
+        ],
+        [
+          14,
+          17,
+          3,
+          16
+        ],
+        [
+          1,
+          2,
+          47,
+          0
+        ],
+        [
+          15,
+          19,
+          2,
+          14
+        ]
+      ]
+    },
+    "test": {
+      "macro_f1": 0.427,
+      "per_class": {
+        "clean": {
+          "precision": 0.283,
+          "recall": 0.26,
+          "f1-score": 0.271,
+          "support": 50.0
+        },
+        "hidden_instruction": {
+          "precision": 0.24,
+          "recall": 0.24,
+          "f1-score": 0.24,
+          "support": 50.0
+        },
+        "total_mismatch": {
+          "precision": 0.962,
+          "recall": 1.0,
+          "f1-score": 0.98,
+          "support": 50.0
+        },
+        "edited_amount_bank": {
+          "precision": 0.212,
+          "recall": 0.22,
+          "f1-score": 0.216,
+          "support": 50.0
+        }
+      },
+      "confusion": [
+        [
+          13,
+          19,
+          0,
+          18
+        ],
+        [
+          15,
+          12,
+          0,
+          23
+        ],
+        [
+          0,
+          0,
+          50,
+          0
+        ],
+        [
+          18,
+          19,
+          2,
+          11
+        ]
+      ]
+    }
+  },
+  "hidden_by_shade": {
+    "165-200 (visible grey)": {
+      "n": 28,
+      "caught": 6
+    },
+    "201-220 (light)": {
+      "n": 10,
+      "caught": 3
+    },
+    "221-238 (near white)": {
+      "n": 12,
+      "caught": 3
+    }
+  },
+  "edited_by_kind": {
+    "amount": {
+      "n": 25,
+      "caught": 7
+    },
+    "bank": {
+      "n": 25,
+      "caught": 4
+    }
+  },
+  "mismatch_parse": {
+    "n": 50,
+    "parsed": 50,
+    "rule_flagged": 50
+  },
+  "top_hidden_terms": [
+    "355",
+    "113",
+    "89",
+    "318",
+    "85",
+    "138",
+    "logistics",
+    "98",
+    "granite",
+    "london invoice",
+    "box 10",
+    "29 vat",
+    "163",
+    "99",
+    "73"
+  ]
+}
